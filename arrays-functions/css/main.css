@@ -67,3 +67,11 @@ body {
 .col-3:nth-child(6n + 6) .box {
     border-top-color: #e74c3c;
 }
+
+
+
+
+.box-actions {
+    margin: -0.5rem -0.5rem 0 -0.5rem;
+    text-align: right;
+}

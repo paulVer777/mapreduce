@@ -152,6 +152,14 @@ function removeFirst() {
 }
 
 
+function activateBox(value) {
+    console.log('Aktywuje BOXY dla wartości "' + value + '"');
+    var arrayElementsDOM = document.getElementById('array-elements');
+    var key = arr.indexOf(value);
+    var box = arrayElementsDOM.childNodes[key];
+    box.className += " box-active";
+}
+
 
 
 var sort=arr.filter(function (value,index,array) {
@@ -160,10 +168,10 @@ var sort=arr.filter(function (value,index,array) {
 
     if(value.length>5) {
 
+
         return true;
 
     }
 });
 
-
-alert(sort);
+sort.forEach(activateBox);
