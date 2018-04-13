@@ -150,3 +150,20 @@ function removeFirst() {
     arr.shift();
     updateView();
 }
+
+
+
+
+var sort=arr.filter(function (value,index,array) {
+
+
+
+    if(value.length>5) {
+
+        return true;
+
+    }
+});
+
+
+alert(sort);
