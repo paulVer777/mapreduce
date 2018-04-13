@@ -179,11 +179,11 @@ var sort=arr.filter(function (value,index,array) {
 sort.forEach(activateBox);
 
 
-alert(arr.reduce(function(result,number){
+alert(arr.reduce(function(result,string){
 
-    if(number.length>5)
+    if(string.length>5)
 
-        return result+number.length;
+        return result+string.length;
 
 else return result
 
@@ -192,3 +192,27 @@ else return result
 },0));
 
 
+var mod=arr.map(function(value,index,array){
+
+
+    for(var i=0;i<arr.length;i++)
+    {
+
+        if(value===arr[i])
+        {
+
+
+
+        }
+
+    else return value+"(x1)"
+
+
+
+
+    }
+//dodaj x2 do value jesli wystapil dwa razy w tablicy
+
+});
+
+alert(mod);
