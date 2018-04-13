@@ -172,6 +172,23 @@ var sort=arr.filter(function (value,index,array) {
         return true;
 
     }
+
+
 });
 
 sort.forEach(activateBox);
+
+
+alert(arr.reduce(function(result,number){
+
+    if(number.length>5)
+
+        return result+number.length;
+
+else return result
+
+
+
+},0));
+
+
